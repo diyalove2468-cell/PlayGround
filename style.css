@@ -10,6 +10,9 @@
 @media(max-width:650px){.shot-goalframe{right:10%;width:39%;height:34%;top:27%}.shot-player{left:13%;bottom:19%;transform:scale(.86);transform-origin:bottom left}.shot-ball{left:31%;bottom:19%}.shot-stands{top:18%}.shot-callout{bottom:12px}.shot-topline{padding:9px 10px}}
 @media(prefers-reduced-motion:reduce){.shot-overlay,.shot-player,.shot-leg,.shot-ball,.shot-keeper,.shot-flash{animation-duration:.01ms!important;animation-delay:0ms!important}}
 
+/* Scenario library and match setup */
+.scenario-picker{display:grid;grid-template-columns:minmax(220px,1fr) auto auto;align-items:end;gap:9px;padding:12px;margin:0 0 14px;border:1px solid var(--line);border-radius:13px;background:#1a211acc}.scenario-picker label{display:grid;gap:6px;color:var(--lime);font-size:9px;font-weight:900;letter-spacing:1.4px}.scenario-picker label b{display:inline-grid;place-items:center;min-width:30px;margin-left:5px;padding:3px 6px;border-radius:20px;background:#c7f36b1c;color:var(--lime)}.scenario-picker select{width:100%;min-width:0;padding:10px 12px;border:1px solid var(--line);border-radius:9px;background:#101510;color:var(--white);font:600 11px 'DM Sans',sans-serif}.scenario-picker .btn{min-height:38px;padding:9px 13px;font-size:9px;white-space:nowrap}.scenario-caption{grid-column:1/-1;color:var(--muted);font-size:10px;font-weight:700}.scenario-goal{border-color:#c7f36b3b!important}.scenario-goal h3{color:var(--lime)!important}
+@media(max-width:650px){.scenario-picker{grid-template-columns:minmax(0,1fr) auto;gap:8px}.scenario-picker label{grid-column:1/-1}.scenario-picker .btn{padding:10px 8px;font-size:8px}.scenario-caption{font-size:9px}.scenario-goal{grid-column:1/-1}}
 /* Swipe-first match HUD */
 .pitch-3d{background:linear-gradient(180deg,#263945 0%,#142018 38%);box-shadow:inset 0 0 40px #07100b66}
 .pitch-3d canvas{display:block}
